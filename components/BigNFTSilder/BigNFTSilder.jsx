@@ -260,7 +260,7 @@ const BigNFTSilder = () => {
                   })
                 })}
               >
-                !!buy
+               !!buy
               </button>
               {/* <Button btnName="BUY" checkout1={() => {checkout({
 
