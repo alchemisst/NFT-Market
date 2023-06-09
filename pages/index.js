@@ -13,6 +13,7 @@ const Home = () => {
     <HeroSection/>
    
     <BigNFTSilder/>
+    
     <Service/>
   </div>
  )

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { AiFillFire, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { MdVerified, MdTimer } from "react-icons/md";
 import { TbArrowBigLeftLines, TbArrowBigRightLine } from "react-icons/tb";
+import { checkout } from "./checkout";
 
 //INTERNAL IMPORT
 import Style from "./BigNFTSilder.module.css";
@@ -21,7 +22,7 @@ const BigNFTSilder = () => {
       collection: "APE",
       price: "777 ETH",
       like: 903,
-      usdPrice:"1,622,372",
+      usdPrice: "162,312",
       image: images.user1,
       nftImage: images.nft_image_1,
       time: {
@@ -37,7 +38,7 @@ const BigNFTSilder = () => {
       name: "Deepanshu",
       collection: "Dogs",
       price: "40 ETH",
-      usdPrice:"82,313",
+      usdPrice: "82,313",
       like: 300,
       image: images.user1,
       nftImage: images.nft_image_2,
@@ -55,7 +56,7 @@ const BigNFTSilder = () => {
       name: "Rahul",
       collection: "GOW",
       price: "40 ETH",
-      usdPrice:"82,313",
+      usdPrice: "82,313",
       like: 300,
       image: images.user2,
       nftImage: images.nft_image_3,
@@ -72,7 +73,7 @@ const BigNFTSilder = () => {
       name: "Mayank",
       collection: "FIRE",
       price: "150 ETH",
-      usdPrice:"211,991",
+      usdPrice: "211,991",
       like: 243,
       image: images.user3,
       nftImage: images.nft_image_4,
@@ -89,7 +90,7 @@ const BigNFTSilder = () => {
       name: "Shanaya",
       collection: "ELON",
       price: "499 ETH",
-      usdPrice:"1,041,988",
+      usdPrice: "1,041,988",
       like: 143,
       image: images.user4,
       nftImage: images.nft_image_5,
@@ -99,14 +100,14 @@ const BigNFTSilder = () => {
         minutes: 21,
         seconds: 90,
       },
-    },  
+    },
     {
       title: "Azuki",
       id: 6,
       name: "Mayank",
       collection: "WOOD",
       price: "46 ETH",
-      usdPrice:"80,996",
+      usdPrice: "80,996",
       like: 243,
       image: images.user3,
       nftImage: images.nft_image_6,
@@ -115,7 +116,7 @@ const BigNFTSilder = () => {
         hours: 22,
         minutes: 54,
         seconds: 2,
-      }
+      },
     },
     {
       title: "Overcast",
@@ -132,7 +133,7 @@ const BigNFTSilder = () => {
         hours: 12,
         minutes: 54,
         seconds: 58,
-      }
+      },
     },
   ];
 
@@ -153,7 +154,6 @@ const BigNFTSilder = () => {
   // useEffect( () => {
   //   inc();
   // },[] );
-
 
   return (
     <div className={Style.bigNFTSlider}>
@@ -198,7 +198,8 @@ const BigNFTSilder = () => {
             <div className={Style.bigNFTSlider_box_left_bidding_box}>
               <small>Current Bid</small>
               <p>
-                {sliderData[idNumber].price} <span>= ${sliderData[idNumber].usdPrice}</span>
+                {sliderData[idNumber].price}{" "}
+                <span>= ${sliderData[idNumber].usdPrice}</span>
               </p>
             </div>
 
@@ -240,7 +241,31 @@ const BigNFTSilder = () => {
             </div>
 
             <div className={Style.bigNFTSlider_box_left_button}>
-              <Button btnName="BUY" handleClick={() => {}} />
+              <button
+                onClick={(() => {
+                  checkout({
+                    lineItems: [
+                      {
+                        price: "price_1NGjsXSAeCqb57kGZt7AhEas",
+                        quantity: 1
+                      }
+                    ]
+                  })
+                })}
+              >
+                !!buy
+              </button>
+              {/* <Button btnName="BUY" checkout1={() => {checkout({
+
+                
+lineItems:[{
+  price:"price_1NGjsXSAeCqb57kGZt7AhEas",
+  quantity:1
+
+}]
+ 
+  })}} /> */}
+
               {/* <Button btnName="SELL" handleClick={() => {}} /> */}
             </div>
           </div>
@@ -259,7 +284,7 @@ const BigNFTSilder = () => {
 
         <div className={Style.bigNFTSlider_box_right}>
           <div className={Style.bigNFTSlider_box_right_box}>
-            <Image 
+            <Image
               src={sliderData[idNumber].nftImage}
               alt="NFT IMAGE"
               className={Style.bigNFTSlider_box_right_box_img}
