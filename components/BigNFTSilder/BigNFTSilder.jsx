@@ -23,7 +23,7 @@ const BigNFTSilder = () => {
       price: "777 ETH",
       like: 903,
       usdPrice: "9,312",
-      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
+      priceID:"price_1NH5uASAeCqb57kGAPnd9B2p",
       image: images.user1,
       nftImage: images.nft_image_1,
       time: {
