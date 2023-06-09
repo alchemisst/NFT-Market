@@ -1,5 +1,5 @@
 
-import user1 from "./user-1.png";
+import user1 from "./User-1.png";
 import user2 from "./user-2.png";
 import user3 from "./user-3.png";
 import user4 from "./user-4.png";
