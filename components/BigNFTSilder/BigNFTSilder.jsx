@@ -22,7 +22,8 @@ const BigNFTSilder = () => {
       collection: "APE",
       price: "777 ETH",
       like: 903,
-      usdPrice: "162,312",
+      usdPrice: "9,312",
+      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
       image: images.user1,
       nftImage: images.nft_image_1,
       time: {
@@ -38,7 +39,8 @@ const BigNFTSilder = () => {
       name: "Deepanshu",
       collection: "Dogs",
       price: "40 ETH",
-      usdPrice: "82,313",
+      usdPrice: "2,313",
+      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
       like: 300,
       image: images.user1,
       nftImage: images.nft_image_2,
@@ -57,6 +59,7 @@ const BigNFTSilder = () => {
       collection: "GOW",
       price: "40 ETH",
       usdPrice: "82,313",
+      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
       like: 300,
       image: images.user2,
       nftImage: images.nft_image_3,
@@ -74,6 +77,7 @@ const BigNFTSilder = () => {
       collection: "FIRE",
       price: "150 ETH",
       usdPrice: "211,991",
+      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
       like: 243,
       image: images.user3,
       nftImage: images.nft_image_4,
@@ -91,6 +95,7 @@ const BigNFTSilder = () => {
       collection: "ELON",
       price: "499 ETH",
       usdPrice: "1,041,988",
+      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
       like: 143,
       image: images.user4,
       nftImage: images.nft_image_5,
@@ -108,6 +113,7 @@ const BigNFTSilder = () => {
       collection: "WOOD",
       price: "46 ETH",
       usdPrice: "80,996",
+      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
       like: 243,
       image: images.user3,
       nftImage: images.nft_image_6,
@@ -125,6 +131,7 @@ const BigNFTSilder = () => {
       collection: "ZOMBIE",
       price: "34 ETH",
       usdPrice: "60,011",
+      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
       like: 243,
       image: images.user2,
       nftImage: images.nft_image_7,
@@ -246,7 +253,7 @@ const BigNFTSilder = () => {
                   checkout({
                     lineItems: [
                       {
-                        price: "price_1NGjsXSAeCqb57kGZt7AhEas",
+                        price: sliderData[idNumber].priceID,
                         quantity: 1
                       }
                     ]
