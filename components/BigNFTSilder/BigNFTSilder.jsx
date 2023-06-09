@@ -246,7 +246,7 @@ const BigNFTSilder = () => {
                   checkout({
                     lineItems: [
                       {
-                        price: "price_1NGjsXSAeCqb57kGZt7AhEas",
+                        price: "price_1NH5V2SAeCqb57kGEoLmg0py",
                         quantity: 1
                       }
                     ]
