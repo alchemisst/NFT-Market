@@ -1,4 +1,5 @@
 import { loadStripe } from "@stripe/stripe-js"
+import { Success } from "../componentindex"
 
 export async function checkout({lineItems}){
     let stripePromise = null
@@ -14,7 +15,7 @@ export async function checkout({lineItems}){
         mode:'payment',
         lineItems,
         successUrl:`${window.location.origin}?session_id={Checkout_Session_Id}`,
-        cancelUrl:window.location.origin
+        cancelUrl: window.location.origin
     
     })
 }
