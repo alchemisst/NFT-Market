@@ -248,7 +248,7 @@ const BigNFTSilder = () => {
             </div>
 
             <div className={Style.bigNFTSlider_box_left_button}>
-              <button
+              <button className={Style.btn12}
                 onClick={(() => {
                   checkout({
                     lineItems: [
