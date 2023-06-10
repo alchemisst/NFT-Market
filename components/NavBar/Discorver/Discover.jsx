@@ -9,10 +9,7 @@ const Discover = () => {
 
   //disc menu
   const discover=[ 
- {
-    name: "Collection",
-    link: "collection"
-  },
+
   {
     name:"Search",
     link:"search"
@@ -25,10 +22,7 @@ const Discover = () => {
     name:"NFT Details",
     link:"NFT-detaills"
   },
-  {
-    name:"Account Setting",
-    link:"account srtting"
-  },
+
   {
     name:"Connect wallet",
     link:"wallet"
