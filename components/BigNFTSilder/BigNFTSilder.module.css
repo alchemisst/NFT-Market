@@ -168,6 +168,29 @@
     border-radius: 5rem;
 }
 
+.btn12 {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+.btn12:hover {
+    background: #ff0040;
+    background-image: -webkit-linear-gradient(top, #ff0040, #3498db);
+    background-image: -moz-linear-gradient(top, #ff0040, #3498db);
+    background-image: -ms-linear-gradient(top, #ff0040, #3498db);
+    background-image: -o-linear-gradient(top, #ff0040, #3498db);
+    background-image: linear-gradient(to bottom, #ff0040, #3498db);
+    text-decoration: none;
+  }
+
+
 
 .btn12 {
     -webkit-border-radius: 28;
