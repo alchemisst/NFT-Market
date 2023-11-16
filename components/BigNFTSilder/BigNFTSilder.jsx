@@ -22,8 +22,8 @@ const BigNFTSilder = () => {
       collection: "APE",
       price: "777 ETH",
       like: 903,
-      usdPrice: "2,312",
-      priceID:"price_1NHIFLSAeCqb57kG2eWTcR6D",
+      usdPrice: "20,312",
+      priceID:"price_1OD0oiSAeCqb57kG5OOqsWy9",
       image: images.user1,
       nftImage: images.nft_image_1,
       time: {
@@ -39,8 +39,8 @@ const BigNFTSilder = () => {
       name: "Deepanshu",
       collection: "Dogs",
       price: "40 ETH",
-      usdPrice: "2,313",
-      priceID:"price_1NH5V2SAeCqb57kGEoLmg0py",
+      usdPrice: "30,313",
+      priceID:"price_1OD0qrSAeCqb57kGolQY2mLB",
       like: 300,
       image: images.user1,
       nftImage: images.nft_image_2,
@@ -58,8 +58,8 @@ const BigNFTSilder = () => {
       name: "Rahul",
       collection: "GOW",
       price: "40 ETH",
-      usdPrice: "1,313",
-      priceID:"price_1NHIHNSAeCqb57kGPeQ2ONQE",
+      usdPrice: "60,000",
+      priceID:"price_1OD0scSAeCqb57kGL77sgzQa",
       like: 300,
       image: images.user2,
       nftImage: images.nft_image_3,
@@ -76,8 +76,8 @@ const BigNFTSilder = () => {
       name: "Mayank",
       collection: "FIRE",
       price: "150 ETH",
-      usdPrice: "1,991",
-      priceID:"price_1NHIIOSAeCqb57kG84ofl5fr",
+      usdPrice: "65,000",
+      priceID:"price_1OD0t8SAeCqb57kGxJymYtMp",
       like: 243,
       image: images.user3,
       nftImage: images.nft_image_4,
@@ -94,8 +94,8 @@ const BigNFTSilder = () => {
       name: "Shanaya",
       collection: "ELON",
       price: "499 ETH",
-      usdPrice: "4,988",
-      priceID:"price_1NHIK7SAeCqb57kG3iaVaLFV",
+      usdPrice: "40,988",
+      priceID:"price_1OD0ufSAeCqb57kGAHw2cDwV",
       like: 143,
       image: images.user4,
       nftImage: images.nft_image_5,
@@ -112,8 +112,8 @@ const BigNFTSilder = () => {
       name: "Mayank",
       collection: "WOOD",
       price: "46 ETH",
-      usdPrice: "8,996",
-      priceID:"price_1NHILLSAeCqb57kGSHDwKb1g",
+      usdPrice: "80,996",
+      priceID:"price_1OD0u5SAeCqb57kGjtX2NdId",
       like: 243,
       image: images.user3,
       nftImage: images.nft_image_6,
@@ -131,7 +131,7 @@ const BigNFTSilder = () => {
       collection: "ZOMBIE",
       price: "34 ETH",
       usdPrice: "6,011",
-      priceID:"price_1NHIM8SAeCqb57kGBllmaVQB",
+      priceID:"price_1OD0v5SAeCqb57kGXM807K2L",
       like: 243,
       image: images.user2,
       nftImage: images.nft_image_7,
@@ -206,7 +206,7 @@ const BigNFTSilder = () => {
               <small>Current Bid</small>
               <p>
                 {sliderData[idNumber].price}{" "}
-                <span>= ${sliderData[idNumber].usdPrice}</span>
+                <span>= ₹{sliderData[idNumber].usdPrice}</span>
               </p>
             </div>
 
