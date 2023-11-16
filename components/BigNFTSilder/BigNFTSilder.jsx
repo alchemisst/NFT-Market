@@ -130,7 +130,7 @@ const BigNFTSilder = () => {
       name: "Rahul",
       collection: "ZOMBIE",
       price: "34 ETH",
-      usdPrice: "6,011",
+      usdPrice: "99,000",
       priceID:"price_1OD0v5SAeCqb57kGXM807K2L",
       like: 243,
       image: images.user2,
