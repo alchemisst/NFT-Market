@@ -22,6 +22,8 @@ const HeroSection = () => {
           <Button
             btnName="Start your search"
           />
+          <button className="Button">Hello</button>
+
         </div>
         <div className={Style.heroSection_box_right}>
           <Image
